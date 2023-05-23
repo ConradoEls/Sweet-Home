@@ -1,0 +1,22 @@
+.navbar-shopping-cart {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+.navbar-shopping-cart div {
+  width: 16px;
+  height: 16px;
+  background-color: var(--sweet-home);
+  border-radius: 50%;
+  font-size: var(--sm);
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: -6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
