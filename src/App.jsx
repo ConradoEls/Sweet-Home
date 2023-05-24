@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <NavBar />
-      <ItemListContainer />
+      <ItemListContainer greeting={'Bienvenidos a "SWEET HOME" mi e-commerce de pastelería'}/>
     </>
   )
 }
