@@ -31,6 +31,7 @@
   border: 1px solid var(--white);
   padding: 8px;
   border-radius: 8px;
+  transition: all 0.7s;
 }
 
 .navbar ul li a:hover {

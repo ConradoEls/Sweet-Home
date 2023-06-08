@@ -16,19 +16,19 @@ const NavBar = () => {
               <a href="">Productos</a>
             </li>
             <li>
-              <a href="">Eventos</a>
+              <a href="">Tortas & Postres</a>
             </li>
             <li>
-              <a href="">Galería</a>
+              <a href="">Tartas</a>
             </li>
             <li>
-              <a href="">Contacto</a>
+              <a href="">Delicatessen</a>
             </li>
             <li>
-              <a href="">Iniciar pedido</a>
+              <a href="">Individuales</a>
             </li>
             <li>
-              <a href="">Mi cuenta</a>
+              <a href="">Especiales</a>
             </li>
           </ul>
         </div>
