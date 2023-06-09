@@ -10,6 +10,7 @@
 
 .navbar-shopping-cart:hover {
   transform: scale(1.4);
+  cursor: pointer;
 }
 
 .navbar-shopping-cart div {
