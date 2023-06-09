@@ -13,9 +13,6 @@ const NavBar = () => {
           />
           <ul>
             <li>
-              <a href="">Productos</a>
-            </li>
-            <li>
               <a href="">Tortas & Postres</a>
             </li>
             <li>
@@ -29,6 +26,9 @@ const NavBar = () => {
             </li>
             <li>
               <a href="">Especiales</a>
+            </li>
+            <li>
+              <a href="">Ver Todos</a>
             </li>
           </ul>
         </div>
