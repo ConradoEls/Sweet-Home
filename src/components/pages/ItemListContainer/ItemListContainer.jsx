@@ -9,6 +9,7 @@ const ItemListContainer = () => {
     const fetchProduct = new Promise((resolve, reject) => {
       setTimeout(() => {
         resolve(products);
+        reject("No se encontraron productos")
       }, 1000);
     });
 
