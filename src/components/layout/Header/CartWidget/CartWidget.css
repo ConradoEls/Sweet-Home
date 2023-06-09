@@ -5,7 +5,13 @@
   display: flex;
   align-items: center;
   height: 60px;
+  transition: all 0.4s;
 }
+
+.navbar-shopping-cart:hover {
+  transform: scale(1.4);
+}
+
 .navbar-shopping-cart div {
   width: 16px;
   height: 16px;

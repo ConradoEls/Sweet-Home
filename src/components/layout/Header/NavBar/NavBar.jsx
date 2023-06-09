@@ -7,7 +7,7 @@ const NavBar = () => {
       <nav className="container">
         <div className="navbar">
           <img
-            src="https://res.cloudinary.com/dtvlycezq/image/upload/v1684851983/Sweet%20Home/logo_white_background_juwvek.jpg"
+            src="https://res.cloudinary.com/dtvlycezq/image/upload/v1684851983/Sweet%20Home/logo_transparent_background_wtqilz.png"
             alt="logo"
             className="logo"
           />

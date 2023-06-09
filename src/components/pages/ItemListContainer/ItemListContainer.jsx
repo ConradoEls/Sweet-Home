@@ -1,9 +1,9 @@
-import ItemListContainerPresentacional from "./ItemListContainerPresentacional";
+import ItemListPresentacional from "./ItemListContainerPresentacional";
 
-/* eslint-disable react/prop-types */
+
 const ItemListContainer = () => {
   return (
-    <ItemListContainerPresentacional />
+    <ItemListPresentacional />
   );
 };
 

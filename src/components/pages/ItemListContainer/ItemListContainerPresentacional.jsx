@@ -1,20 +1,10 @@
+import ProductCard from "../../common/ProductCard/ProductCard"
 
 
-const ItemListContainerPresentacional = () => {
+const ItemListPresentacional = () => {
   return (
-    <>
-      <div>
-        <h1 style={{ textAlign: "center", color: "var(--sweet-home)" }}>
-          greeting
-        </h1>
-        <img
-          src="https://res.cloudinary.com/dtvlycezq/image/upload/v1684881641/Sweet%20Home/logo_size_invert_y9knht.jpg"
-          alt="logo banner"
-          style={{ width: "100%" }}
-        />
-      </div>
-    </>
+    <ProductCard />
   )
 }
 
-export default ItemListContainerPresentacional
+export default ItemListPresentacional
