@@ -6,8 +6,8 @@ function App() {
   return (
     <>
       <NavBar />
-      <ItemListContainer />
-      {/* <ProductDetailContainer /> */}
+      {/* <ItemListContainer /> */}
+      <ProductDetailContainer />
     </>
   );
 }

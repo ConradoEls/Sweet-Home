@@ -17,6 +17,7 @@
   width: 16px;
   height: 16px;
   background-color: var(--sweet-home);
+  color: var(--text-input-field);
   border-radius: 50%;
   font-size: var(--sm);
   font-weight: bold;
