@@ -23,10 +23,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.4s;
 }
 
 .product-detail-close:hover{
     cursor:pointer;
+    transform: scale(1.09);
 }
 
 .product-detail > img:nth-child(2){
