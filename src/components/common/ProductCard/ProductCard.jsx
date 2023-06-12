@@ -1,6 +1,7 @@
+/* eslint-disable react/prop-types */
 import "./ProductCard.css";
 
-const ProductCard = ({element}) => {
+const ProductCard = ({ element }) => {
   return (
       <div className="product-card">
         <img src={element.img} alt="product" className="product-img" />

@@ -1,7 +1,8 @@
+/* eslint-disable react/prop-types */
 import ProductCard from "../../common/ProductCard/ProductCard"
 import "./ItemList.css"
 
-const ItemListPresentacional = ( { items } ) => {
+const ItemListPresentacional = ({ items }) => {
   return (
     <div className="cards-container">
         {items.map((element) => {
