@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 
 import useCount from "../../hooks/useCount";
 

@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+
 import ProductCard from "../../common/ProductCard/ProductCard"
 import "./ItemList.css"
 
