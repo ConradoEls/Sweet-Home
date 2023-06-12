@@ -33,7 +33,7 @@
 .product-info div p:nth-child(2) {
   font-size: var(--sm);
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   color: var(--very-light-pink);
 }
 

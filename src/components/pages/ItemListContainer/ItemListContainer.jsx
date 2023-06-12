@@ -1,26 +1,11 @@
-import { useEffect, useState } from "react";
 import { products } from "../../../productsMock";
 import ItemListPresentacional from "./ItemListPresentacional";
+import { useLocalFetch } from "../../hooks/useLocalFetch";
 
 const ItemListContainer = () => {
-  const [items, setItems] = useState([]);
 
-  useEffect(() => {
-    const fetchProduct = new Promise((resolve,) => {
-      setTimeout(() => {
-        resolve(products);
-      }, 1000);
-    });
-
-    fetchProduct
-      .then((res) => {
-        setItems(res);
-      })
-      .catch((err) => {
-        console.log("catch: ", err);
-      });
-  }, []);
-
+  const {items} = useLocalFetch([],products)
+  
   return <ItemListPresentacional items={items} />;
 };
 
