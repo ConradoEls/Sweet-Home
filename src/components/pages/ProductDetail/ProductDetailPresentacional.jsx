@@ -2,19 +2,8 @@
 import ItemCount from "../../common/Counter/ItemCount";
 import "./ProductDetail.css";
 
-const ProductDetailPresentacional = ({ productSelected }) => {
-  
-  const onAdd = ( cantidad ) => {
-    let data = {
-      ...productSelected,
-      quantity: cantidad
-    }
-    console.log(data);
-  }
-
-
+const ProductDetailPresentacional = ({ productSelected, onAdd }) => {
   return (
-
     <div className="product-detail">
       <div className="product-detail-close">
         <img src="/assets/icon_close.png" alt="close" />
@@ -31,9 +20,10 @@ const ProductDetailPresentacional = ({ productSelected }) => {
       </div>
       {productSelected.stock > 0 ? (
         <ItemCount stock={productSelected.stock} initial={1} onAdd={onAdd} />
-      ) : <h3>No hay stock</h3>} 
+      ) : (
+        <h3>No hay stock</h3>
+      )}
     </div>
-    
   );
 };
 
