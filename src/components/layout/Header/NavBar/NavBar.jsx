@@ -1,3 +1,4 @@
+import { Outlet, Link } from "react-router-dom";
 import CartWidget from "../CartWidget/CartWidget";
 import "./NavBar.css";
 
@@ -6,11 +7,14 @@ const NavBar = () => {
     <>
       <nav className="container">
         <div className="navbar">
-          <img
-            src="https://res.cloudinary.com/dtvlycezq/image/upload/v1684851983/Sweet%20Home/logo_transparent_background_wtqilz.png"
-            alt="logo"
-            className="logo"
-          />
+          <Link to="/">
+            <img
+              src="https://res.cloudinary.com/dtvlycezq/image/upload/v1684851983/Sweet%20Home/logo_transparent_background_wtqilz.png"
+              alt="logo"
+              className="logo"
+            />
+          </Link>
+
           <ul>
             <li>
               <a href="">Tortas & Postres</a>
@@ -34,6 +38,7 @@ const NavBar = () => {
         </div>
         <CartWidget />
       </nav>
+      <Outlet />
     </>
   );
 };
