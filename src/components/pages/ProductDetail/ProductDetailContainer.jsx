@@ -2,9 +2,9 @@ import ProductDetailPresentacional from "./ProductDetailPresentacional";
 import { products } from "../../../productsMock";
 import useFetchID from "../../hooks/useFetchID";
 
-const ProductDetailContainer = () => {
-  const { productSelected } = useFetchID({}, 9, products);
 
+const ProductDetailContainer = () => {
+  const { productSelected } = useFetchID({}, products);
   const onAdd = (cantidad) => {
     let data = {
       ...productSelected,

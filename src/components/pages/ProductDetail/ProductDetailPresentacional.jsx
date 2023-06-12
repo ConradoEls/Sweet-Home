@@ -1,13 +1,17 @@
 /* eslint-disable react/prop-types */
+import { Link } from "react-router-dom";
 import ItemCount from "../../common/Counter/ItemCount";
 import "./ProductDetail.css";
+
 
 const ProductDetailPresentacional = ({ productSelected, onAdd }) => {
   return (
     <div className="product-container">
       <div className="product-detail">
         <div className="product-detail-close">
-          <img src="/assets/icon_close.png" alt="close" />
+          <Link to="./">
+            <img src="/assets/icon_close.png" alt="close" />
+          </Link>
         </div>
         <img src={productSelected.img} alt="product" className="product-img" />
         <div className="product-info">

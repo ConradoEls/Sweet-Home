@@ -1,4 +1,4 @@
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import CartWidget from "../CartWidget/CartWidget";
 import "./NavBar.css";
 
@@ -16,29 +16,28 @@ const NavBar = () => {
           </Link>
 
           <ul>
-            <li>
-              <a href="">Tortas & Postres</a>
-            </li>
-            <li>
-              <a href="">Tartas</a>
-            </li>
-            <li>
-              <a href="">Delicatessen</a>
-            </li>
-            <li>
-              <a href="">Individuales</a>
-            </li>
-            <li>
-              <a href="">Especiales</a>
-            </li>
-            <li>
-              <a href="">Ver Todos</a>
-            </li>
+            <Link to="/category/tortas"style={{textDecoration: "none"}}>
+              <li>Tortas & Postres</li>
+            </Link>
+            <Link to="/category/tartas"style={{textDecoration: "none"}}>
+              <li>Tartas</li>
+            </Link>
+            <Link to="/category/delicatessen"style={{textDecoration: "none"}}>
+              <li>Delicatessen</li>
+            </Link>
+            <Link to="/category/individuales"style={{textDecoration: "none"}}>
+              <li>Individuales</li>
+            </Link>
+            <Link to="/category/especiales"style={{textDecoration: "none"}}>
+              <li>Especiales</li>
+            </Link>
+            <Link to="/"style={{textDecoration: "none"}}>
+              <li>Ver Todos</li>
+            </Link>
           </ul>
         </div>
         <CartWidget />
       </nav>
-      <Outlet />
     </>
   );
 };

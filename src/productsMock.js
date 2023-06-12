@@ -290,7 +290,7 @@ export const products = [
     {
         id:33,
         title: "DEL BOSQUE",
-        price: 4700,
+        price: 3900,
         stock: 5,
         description: "Base de brownie con frutos frescos.",
         category: "tartas",
@@ -299,7 +299,7 @@ export const products = [
     {
         id: 34,
         title: "FRUTOS ROJOS",
-        price: 4700,
+        price: 4000,
         stock: 5,
         description: "Tarta dulce con frutos rojos y azucar nevada.",
         category: "tartas",
@@ -308,7 +308,7 @@ export const products = [
     {
         id: 35,
         title: "PRIMAVERA",
-        price: 4700,
+        price: 2500,
         stock: 5,
         description: "Tarta con crema y frutas de estación.",
         category: "tartas",
@@ -317,7 +317,7 @@ export const products = [
     {
         id: 36,
         title: "CHEESE CAKE FLAN",
-        price: 4700,
+        price: 5000,
         stock: 5,
         description: "Cheese cake de queso y flan perfumado con caramelo.",
         category: "tartas",
@@ -326,7 +326,7 @@ export const products = [
     {
         id: 37,
         title: "ARANDANOS",
-        price: 4700,
+        price: 5100,
         stock: 5,
         description: "Tarta fina con lluvia de arandanos frescos.",
         category: "tartas",

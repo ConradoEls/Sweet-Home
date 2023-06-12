@@ -30,9 +30,8 @@
   height: 60px;
 }
 
-.navbar ul li a {
+.navbar ul li{
   margin-left: 18px;
-  text-decoration: none;
   color: var(--very-light-pink);
   border: 1px solid var(--white);
   padding: 8px;
@@ -40,7 +39,7 @@
   transition: all 0.7s;
 }
 
-.navbar ul li a:hover {
+.navbar ul li:hover {
   border: 1px solid var(--sweet-home);
   color: var(--sweet-home);
 }
