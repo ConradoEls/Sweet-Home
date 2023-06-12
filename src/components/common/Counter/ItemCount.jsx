@@ -2,22 +2,22 @@
 
 import useCount from "../../hooks/useCount";
 
-
 const ItemCount = ({ stock, initial, onAdd }) => {
-	const { count, decrement, increment } = useCount(initial, stock);
+  const { count, decrement, increment } = useCount(initial, stock);
 
-
-	return (
-		<>
-			<div>
-				<button onClick={decrement}>-</button>
-				<span>{count}</span>
-				<button onClick={increment}>+</button>
-
-				<button onClick={()=> onAdd(count)}>Agregar al carrito</button>
-			</div>
-		</>
-	);
+  return (
+    <>
+      <div className="add-to-cart">
+        <button onClick={decrement} className="secondary-button">-</button>
+        <span className="counter">{count}</span>
+        <button onClick={increment} className="secondary-button">+</button>
+        <button onClick={() => onAdd(count)} className="primary-button add-to-cart-button">
+          <img src="/assets/bt_add_to_cart.svg" alt="añadir al carrito" />
+          Añadir al carrito
+        </button>
+      </div>
+    </>
+  );
 };
 
 export default ItemCount;
