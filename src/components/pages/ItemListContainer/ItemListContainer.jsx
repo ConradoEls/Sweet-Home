@@ -6,10 +6,9 @@ const ItemListContainer = () => {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    const fetchProduct = new Promise((resolve, reject) => {
+    const fetchProduct = new Promise((resolve,) => {
       setTimeout(() => {
         resolve(products);
-        reject("No se encontraron productos")
       }, 1000);
     });
 
