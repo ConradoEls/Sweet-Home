@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import ItemCount from "../../common/Counter/ItemCount";
 import "./ProductDetail.css";
 
-const ProductDetailPresentacional = ({ productSelected, onAdd }) => {
+const ProductDetailPresentacional = ({ productSelected, onAdd, cant }) => {
   const navigate = useNavigate();
   const back = () => {
     navigate(-1);
@@ -20,7 +20,7 @@ const ProductDetailPresentacional = ({ productSelected, onAdd }) => {
           <p>{productSelected.description}</p>
         </div>
         {productSelected.stock > 0 ? (
-          <ItemCount stock={productSelected.stock} initial={1} onAdd={onAdd} />
+          <ItemCount stock={productSelected.stock} initial={cant} onAdd={onAdd} />
         ) : (
           <h3>No hay stock</h3>
         )}

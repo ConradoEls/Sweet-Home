@@ -10,7 +10,9 @@ const ProductDetailContainer = () => {
   const { addToCart } = useContext(CartContext);
 
 
-  const { productSelected } = useFetchID({}, products);
+
+
+  const { productSelected, cant } = useFetchID({}, products);
   const onAdd = (cantidad) => {
     let data = {
       ...productSelected,
@@ -21,6 +23,7 @@ const ProductDetailContainer = () => {
 
   return (
     <ProductDetailPresentacional
+      cant={cant}
       productSelected={productSelected}
       onAdd={onAdd}
     />
