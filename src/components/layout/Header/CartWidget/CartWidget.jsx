@@ -4,14 +4,13 @@ import { CartContext } from "../../../../context/CartContext";
 
 const CartWidget = () => {
 
-  const { cart } = useContext(CartContext);
-
-  console.log(cart);
+  const { getTotalItems } = useContext(CartContext);
+  let totalItems = getTotalItems();
   return (
     <>
       <div className="navbar-shopping-cart">
         <img src="/assets/icon_shopping_cart.svg" alt="cart" />
-        <div>2</div>
+        <div>{totalItems}</div>
       </div>
     </>
   );

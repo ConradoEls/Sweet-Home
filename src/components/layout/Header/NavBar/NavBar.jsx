@@ -36,7 +36,9 @@ const NavBar = () => {
             </Link>
           </ul>
         </div>
+        <Link to="/cartDetail"style={{textDecoration: "none"}}>
         <CartWidget />
+        </Link>
       </nav>
     </>
   );

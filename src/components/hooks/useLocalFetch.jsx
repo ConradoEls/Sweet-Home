@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
+
 export const useLocalFetch = (initial, list) => {
   const [items, setItems] = useState(initial);
   const { categoryName } = useParams();
@@ -12,7 +13,7 @@ export const useLocalFetch = (initial, list) => {
     const fetchProduct = new Promise((resolve) => {
       setTimeout(() => {
         resolve(categoryName ? productosFiltrados : list);
-      }, 100);
+      }, 500);
     });
 
     fetchProduct
@@ -24,5 +25,7 @@ export const useLocalFetch = (initial, list) => {
       });
   }, [categoryName, list]);
 
-  return { items };
+  return (
+    {items}
+  );
 };

@@ -12,7 +12,7 @@ export const products = [
         id: 2,
         title: "MAICENITAS",
         price: 2200,
-        stock: 5,
+        stock: 0,
         description: "Mini alfajorcitos de maicena rellenos con dulce de leche y coco.",
         category: "delicatessen",
         img: "https://res.cloudinary.com/dtvlycezq/image/upload/v1686244695/Sweet%20Home/Productos/Delicatessen/MAICENITAS_k2srfd.jpg"
@@ -39,7 +39,7 @@ export const products = [
         id: 5,
         title: "ALFAJOR DE FRAMBUESA",
         price: 700,
-        stock: 5,
+        stock: 0,
         description: "Alfajores de manteca con frambuesa.",
         category: "delicatessen",
         img: "https://res.cloudinary.com/dtvlycezq/image/upload/v1686244694/Sweet%20Home/Productos/Delicatessen/ALFAJOR_DE_FRAMBUESA_nxsgmt.jpg"
@@ -57,7 +57,7 @@ export const products = [
         id: 7,
         title: "BUDÍN DE LIMÓN",
         price: 4700,
-        stock: 5,
+        stock: 0,
         description: "Budin glaseado de limón.",
         category: "delicatessen",
         img: "https://res.cloudinary.com/dtvlycezq/image/upload/v1686244694/Sweet%20Home/Productos/Delicatessen/BUD%C3%8DN_DE_LIM%C3%93N_pne9nu.jpg"
@@ -93,7 +93,7 @@ export const products = [
         id: 11,
         title: "TRENZA DE PASCUAS",
         price: 3800,
-        stock: 5,
+        stock: 0,
         description: "Crema pastelera con pasas de uva rubias.",
         category: "especiales",
         img: "https://res.cloudinary.com/dtvlycezq/image/upload/v1686244691/Sweet%20Home/Productos/Especiales/TRENZA_DE_PASCUAS_oya3sq.jpg"
@@ -120,7 +120,7 @@ export const products = [
         id: 14,
         title: "TE DESLUMBRO",
         price: 8000,
-        stock: 5,
+        stock: 0,
         description: "2 espumantes, bombas de crema, 2 alfajores, cuadrado dulce , individual a elección cartel con corazón y carta.",
         category: "especiales",
         img: "https://res.cloudinary.com/dtvlycezq/image/upload/v1686244691/Sweet%20Home/Productos/Especiales/TE_DESLUMBRO_ftci7s.jpg"
@@ -165,7 +165,7 @@ export const products = [
         id: 19,
         title: "MINI POSTRE TIRAMISÚ",
         price: 900,
-        stock: 5,
+        stock: 0,
         description: "Postre Tiramisú.",
         category: "individuales",
         img: "https://res.cloudinary.com/dtvlycezq/image/upload/v1686244693/Sweet%20Home/Productos/Individuales/MINI_POSTRE_TIRAMIS%C3%9A_rz4sdo.jpg"
@@ -183,7 +183,7 @@ export const products = [
         id: 21,
         title: "MINI POSTRE TIRAMISÚ & NUTELLA",
         price: 900,
-        stock: 5,
+        stock: 0,
         description: "Postre Tiramisú y Nutella.",
         category: "individuales",
         img: "https://res.cloudinary.com/dtvlycezq/image/upload/v1686244693/Sweet%20Home/Productos/Individuales/MINI_POSTRE_TIRAMIS%C3%9A_NUTELLA_cikoay.jpg"
@@ -219,7 +219,7 @@ export const products = [
         id: 25,
         title: "MINI OREO Y FRAMBUESA",
         price: 900,
-        stock: 5,
+        stock: 0,
         description: "Postre de Oreo y frambuesa.",
         category: "individuales",
         img: "https://res.cloudinary.com/dtvlycezq/image/upload/v1686244692/Sweet%20Home/Productos/Individuales/MINI_OREO_Y_FRAMBUESA_utxdwr.jpg"
@@ -246,7 +246,7 @@ export const products = [
         id: 28,
         title: "CUADRADO DE BROWNIE OREO",
         price: 1100,
-        stock: 5,
+        stock: 0,
         description: "Brownie de chocolate con trozos de galletas Oreo®, y baño de ganache de chocolate. Y más Oreo®!",
         category: "individuales",
         img: "https://res.cloudinary.com/dtvlycezq/image/upload/v1686244692/Sweet%20Home/Productos/Individuales/CUADRADO_DE_BROWNIE_OREO_gdqfic.jpg"
@@ -291,7 +291,7 @@ export const products = [
         id:33,
         title: "DEL BOSQUE",
         price: 3900,
-        stock: 5,
+        stock: 0,
         description: "Base de brownie con frutos frescos.",
         category: "tartas",
         img: "https://res.cloudinary.com/dtvlycezq/image/upload/v1686244695/Sweet%20Home/Productos/Tartas/plum-cake-3641849_640_fq2aoy.jpg"
@@ -309,7 +309,7 @@ export const products = [
         id: 35,
         title: "PRIMAVERA",
         price: 2500,
-        stock: 5,
+        stock: 0,
         description: "Tarta con crema y frutas de estación.",
         category: "tartas",
         img: "https://res.cloudinary.com/dtvlycezq/image/upload/v1686244695/Sweet%20Home/Productos/Tartas/cake-4910417_640_fvifxu.jpg"
@@ -336,7 +336,7 @@ export const products = [
         id: 38,
         title: "VERT PARADISE",
         price: 6600,
-        stock: 5,
+        stock: 0,
         description: "Biscuit de chocolate, crema de chocolate y mousse de naranja.",
         category: "tortas",
         img: "https://res.cloudinary.com/dtvlycezq/image/upload/v1686244697/Sweet%20Home/Productos/Tortas%20y%20Postres/VERT_PARADISE_yhqzcd.jpg"
@@ -363,7 +363,7 @@ export const products = [
         id: 41,
         title: "TORTA DE CUMPLE “FEST”",
         price: 8700,
-        stock: 5,
+        stock: 0,
         description: "Delicioso bizcochuelo húmedo con 2 cortes: ddl y merenguitos, crema chantilly y durazno. En la variante con frutilla: es un producto de estación, sujeto a disponibilidad.",
         category: "tortas",
         img: "https://res.cloudinary.com/dtvlycezq/image/upload/v1686244696/Sweet%20Home/Productos/Tortas%20y%20Postres/TORTA_DE_CUMPLE_PARTY_z1tndi.jpg"
@@ -390,7 +390,7 @@ export const products = [
         id: 44,
         title: "ROGEL",
         price: 6000,
-        stock: 5,
+        stock: 0,
         description: "Capas de masas secas con dulce de leche y merengue.",
         category: "tortas",
         img: "https://res.cloudinary.com/dtvlycezq/image/upload/v1686244696/Sweet%20Home/Productos/Tortas%20y%20Postres/ROGEL_v82qga.jpg"
@@ -417,7 +417,7 @@ export const products = [
         id: 47,
         title: "PAVLOVA",
         price: 9000,
-        stock: 5,
+        stock: 0,
         description: "Canasta de merengue rellena con crema chantilly y banana o frutos rojos. Es un producto de estación, sujeto a disponibilidad.",
         category: "tortas",
         img: "https://res.cloudinary.com/dtvlycezq/image/upload/v1686244696/Sweet%20Home/Productos/Tortas%20y%20Postres/PAVLOVA_lwrghv.jpg"
@@ -435,7 +435,7 @@ export const products = [
         id: 49,
         title: "CARROT CAKE",
         price: 5300,
-        stock: 5,
+        stock: 0,
         description: "Budín de zanahorias con queso Filadelfia.",
         category: "tortas",
         img: "https://res.cloudinary.com/dtvlycezq/image/upload/v1686244696/Sweet%20Home/Productos/Tortas%20y%20Postres/CARROT_CAKE_hljkwj.jpg"
@@ -453,7 +453,7 @@ export const products = [
         id: 51,
         title: "BOMBÓN CON FRUTILLA",
         price: 6400,
-        stock: 5,
+        stock: 0,
         description: "Biscuit de chocolate, crema bombón, chantilly con frutillas y merenguitos. Es un producto de estación, sujeto a disponibilidad.",
         category: "tortas",
         img: "https://res.cloudinary.com/dtvlycezq/image/upload/v1686244695/Sweet%20Home/Productos/Tortas%20y%20Postres/BOMB%C3%93N_CON_FRUTILLA_wx5zgq.jpg"

@@ -1,3 +1,4 @@
+import CartDetailContainer from "../components/pages/CartDetail/CartDetailContainer"
 import Form from "../components/pages/Form/Form"
 import ItemListContainer from "../components/pages/ItemListContainer/ItemListContainer"
 import ProductDetailContainer from "../components/pages/ProductDetail/ProductDetailContainer"
@@ -22,6 +23,11 @@ export const routes = [
         id: "form",
         path: "/form",
         Element: Form
+    },
+    {
+        id: "cartDetail",
+        path: "/cartDetail",
+        Element: CartDetailContainer
     },
 
 ]

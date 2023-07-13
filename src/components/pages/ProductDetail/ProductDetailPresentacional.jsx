@@ -22,7 +22,7 @@ const ProductDetailPresentacional = ({ productSelected, onAdd, cant }) => {
         {productSelected.stock > 0 ? (
           <ItemCount stock={productSelected.stock} initial={cant} onAdd={onAdd} />
         ) : (
-          <h3>No hay stock</h3>
+          <h3 style={{textAlign:"center"}}>Lo siento... No hay stock! :(</h3>
         )}
       </div>
     </div>

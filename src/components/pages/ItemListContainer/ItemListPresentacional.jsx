@@ -8,7 +8,8 @@ const ItemListPresentacional = ({ items }) => {
         {items.map((element) => {
         return <ProductCard key={element.id} element={element} />
       })}
-    </div>
+      
+    </div> 
   )
 }
 

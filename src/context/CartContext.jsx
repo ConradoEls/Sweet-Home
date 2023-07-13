@@ -6,7 +6,7 @@ export const CartContext = createContext();
 
 const CartContextProvider = ({ children }) => {
 
-    const [cart, setCart] = useState( [] )
+    const [cart, setCart] = useState( JSON.parse(localStorage.getItem("cart")) || [] )
 
     const addToCart = ( newProduct ) => {
         let exist = isInCart(newProduct.id)
@@ -22,8 +22,10 @@ const CartContextProvider = ({ children }) => {
                 }
             })
             setCart(newArray)
+            localStorage.setItem("cart", JSON.stringify(newArray))
         }else{
-            setCart( [...cart, newProduct ] )
+            setCart( [...cart, newProduct ] );
+            localStorage.setItem("cart", JSON.stringify([...cart, newProduct ] ))
         }
     }
 
@@ -38,11 +40,41 @@ const CartContextProvider = ({ children }) => {
         return product?.quantity
     }
 
+    const getTotalItems = () => {
+        let total = cart.reduce((acc, elemento)=>{
+            return acc + elemento.quantity 
+        }, 0)
+        return total
+    }
+
+    const getTotalPrice = ()=>{
+
+        let total = cart.reduce( (acc, elemento)=>{
+          return acc + ( elemento.quantity * elemento.price)
+        }, 0 )
+        return total
+      }
+
+      const clearCart = ()=>{
+        setCart( [] )
+        localStorage.removeItem("cart")
+      }
+
+      const removeById = ( id )=>{
+        let newArray = cart.filter( (product)=> product.id !== id )
+        setCart(newArray)
+        localStorage.setItem( "cart", JSON.stringify(newArray) )
+      }
+
 
     let data = {
         cart,
         addToCart,
-        getTotalQuantityByID
+        getTotalQuantityByID,
+        getTotalItems,
+        getTotalPrice,
+        clearCart,
+        removeById
     }
 
   return <CartContext.Provider value={ data }> {children} </CartContext.Provider>
