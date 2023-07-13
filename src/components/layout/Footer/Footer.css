@@ -1,0 +1,12 @@
+.footer-container{
+    background-color: var(--sweet-home);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 110px;
+    text-align: center;
+}
+.footer-container img{
+    width: 110px;
+    height: 110px;
+}
