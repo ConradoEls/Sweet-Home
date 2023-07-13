@@ -10,16 +10,16 @@ const CartDetailContainer = () => {
 
     const limpiar = () => {
         Swal.fire({
-          title: "Seguro quieres limpiar el carrito?",
-          showDenyButton: true,
-          showCancelButton: false,
-          confirmButtonText: "Si, limpiar",
-          denyButtonText: `No, cancelar`,
+          title: "Deseas vaciar el carrito?",
+          showDenyButton: false,
+          showCancelButton: true,
+          confirmButtonText: "Vaciar",
+          denyButtonText: `Cancelar`,
         }).then((result) => {
           /* Read more about isConfirmed, isDenied below */
           if (result.isConfirmed) {
             clearCart();
-            Swal.fire("Carrito limpio", "", "success");
+            Swal.fire("Se ha vaciado el carrito", "", "success");
           } else if (result.isDenied) {
             Swal.fire("El carrito queda como estaba", "", "info");
           }
