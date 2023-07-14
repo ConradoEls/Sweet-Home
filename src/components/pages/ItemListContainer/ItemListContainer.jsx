@@ -1,10 +1,9 @@
-import { products } from "../../../productsMock";
 import ItemListPresentacional from "./ItemListPresentacional";
-import { useLocalFetch } from "../../hooks/useLocalFetch";
 import { BounceLoader } from "react-spinners";
+import { useFetchFirestore } from "../../hooks/useFetchFirestore";
 
 const ItemListContainer = () => {
-  const { items } = useLocalFetch([], products);
+  const { items } = useFetchFirestore([]);
   return (
     <div>
       {items.length > 0 ? (

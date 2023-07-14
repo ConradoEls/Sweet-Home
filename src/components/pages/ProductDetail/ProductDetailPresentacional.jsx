@@ -11,18 +11,23 @@ const ProductDetailPresentacional = ({ productSelected, onAdd, cant }) => {
     <div className="product-container">
       <div className="product-detail">
         <div onClick={back} className="product-detail-close">
-          <img src="/assets/icon_close.png" alt="close" />
+          <img src="/assets/icon_close.png" alt="" />
         </div>
-        <img src={productSelected.img} alt="product" className="product-img" />
+        <img src={productSelected.img} alt="" className="product-img" />
         <div className="product-info">
           <p>{productSelected.title}</p>
           <p>${productSelected.price}</p>
           <p>{productSelected.description}</p>
         </div>
+
         {productSelected.stock > 0 ? (
-          <ItemCount stock={productSelected.stock} initial={cant} onAdd={onAdd} />
+          <ItemCount
+            stock={productSelected.stock}
+            initial={cant}
+            onAdd={onAdd}
+          />
         ) : (
-          <h3 style={{textAlign:"center"}}>Lo siento... No hay stock! :(</h3>
+          <h3 style={{ textAlign: "center" }}>Lo siento... No hay stock!</h3>
         )}
       </div>
     </div>

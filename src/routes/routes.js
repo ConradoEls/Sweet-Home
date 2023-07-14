@@ -1,7 +1,9 @@
 import CartDetailContainer from "../components/pages/CartDetail/CartDetailContainer"
+import CheckoutContainer from "../components/pages/Checkout/CheckoutContainer"
 import Form from "../components/pages/Form/Form"
 import ItemListContainer from "../components/pages/ItemListContainer/ItemListContainer"
 import ProductDetailContainer from "../components/pages/ProductDetail/ProductDetailContainer"
+
 
 export const routes = [
     {
@@ -29,5 +31,10 @@ export const routes = [
         path: "/cartDetail",
         Element: CartDetailContainer
     },
+    {
+        id: "checkout",
+        path: "/checkout",
+        Element: CheckoutContainer
+    }
 
 ]

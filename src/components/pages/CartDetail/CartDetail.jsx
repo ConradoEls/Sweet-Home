@@ -1,5 +1,6 @@
 import "./CartDetail.css";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+
 
 const CartDetail = ({ cart, total, limpiar, removeById }) => {
   const navigate = useNavigate();
@@ -43,7 +44,10 @@ const CartDetail = ({ cart, total, limpiar, removeById }) => {
             <p>$ {total}</p>
           </div>
         </div>
-        <button className="checkout-button">Finalizar Compra</button>
+        <Link to="/checkout">
+          <button className="checkout-button">Finalizar Compra</button>
+        </Link>
+        
       </div>
     </div>
   );
