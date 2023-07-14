@@ -8,7 +8,8 @@ import { CartContext } from "../../../context/CartContext";
 import OrderDetailContainer from "../OrderDetail/OrderDetailContainer";
 
 const CheckoutContainer = () => {
-  const { cart, getTotalPrice, clearCart } = useContext(CartContext);
+  const { cart, getTotalPrice } = useContext(CartContext);
+
   let total = getTotalPrice();
   const [orderID, setOrderID] = useState(null);
   const { handleSubmit, handleChange, errors } = useFormik({
@@ -32,8 +33,7 @@ const CheckoutContainer = () => {
           stock: product.stock - product.quantity,
         });
       });
-
-      clearCart();
+      // clearCart();
     },
     validateOnChange: false,
     validationSchema: Yup.object({

@@ -5,7 +5,7 @@ const Checkout = ({ handleSubmit, handleChange, errors }) => {
   return (
     <div className="checkout">
       <div className="form-container">
-        <h1 className="tittle">Datos para el pedido</h1>
+        <h1 className="tittle">Datos para el pedido:</h1>
         <form onSubmit={handleSubmit} className="form">
             <TextField
               label="Nombre"
