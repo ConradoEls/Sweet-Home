@@ -1,7 +1,6 @@
 import "./CartDetail.css";
 import { Link, useNavigate } from "react-router-dom";
 
-
 const CartDetail = ({ cart, total, limpiar, removeById }) => {
   const navigate = useNavigate();
   const back = () => {
@@ -47,7 +46,6 @@ const CartDetail = ({ cart, total, limpiar, removeById }) => {
         <Link to="/checkout">
           <button className="checkout-button">Finalizar Compra</button>
         </Link>
-        
       </div>
     </div>
   );

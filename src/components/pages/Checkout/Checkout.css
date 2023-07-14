@@ -1,51 +1,38 @@
-/* .login {
+.checkout {
     width: 100%;
-    height: 100vh;
+    height: 74vh;
     display: grid;
     place-items: center;
 }
 
 .form-container{
     display: grid;
-    grid-template-rows: auto 1fr auto;
-    width: 300px;
+    grid-template-rows: auto 1fr;
+    width: 400px;
+    height: 500px;
 }
 
 
 .tittle{
     font-size: var(--lg);
-    margin-bottom: 48px;
+    font-weight: bold;
     text-align: start;
 }
 
 
 .form{
+    height: 400px;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
 }
 
-.form div {
-    display: flex;
-    flex-direction: column;
-}
 
-.label{
-    font-size: var(--sm);
-    font-weight: bold;
-    margin-bottom: 8px;
+.primary-button{
+    background-color: var(--sweet-home) !important;
+    border: none !important;
+    color: white !important;
+    font-family: 'Quicksand', sans-serif !important;
+    width: 100% !important;
+    font-size: var(--lg) !important;
 }
-
-.input{
-    background-color: var(--text-input-field);
-    border: none;
-    border-radius: 8px;
-    height: 30px;
-    font-size: var(--md);
-    padding: 6px;
-    margin-bottom: 18px;
-}
-
-.create-button{
-    margin-top: 14px;
-    margin-bottom: 30px;
-} */

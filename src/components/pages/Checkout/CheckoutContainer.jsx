@@ -5,7 +5,7 @@ import { db } from "../../../firebaseConfig";
 import { addDoc, collection, updateDoc, doc } from "firebase/firestore";
 import { useContext, useState } from "react";
 import { CartContext } from "../../../context/CartContext";
-import Swal from "sweetalert2";
+import OrderDetailContainer from "../OrderDetail/OrderDetailContainer";
 
 const CheckoutContainer = () => {
   const { cart, getTotalPrice, clearCart } = useContext(CartContext);
@@ -52,14 +52,7 @@ const CheckoutContainer = () => {
   return (
     <div>
       {orderID ? (
-        Swal.fire({
-          position: "center",
-          icon: "success",
-          title: "Felicitaciones!",
-          text: "Su número de pedido es: #" + orderID,
-          showConfirmButton: true,
-          timer: 10000,
-        })
+        <OrderDetailContainer orderID={orderID}/>
       ) : (
         <Checkout
           handleSubmit={handleSubmit}
