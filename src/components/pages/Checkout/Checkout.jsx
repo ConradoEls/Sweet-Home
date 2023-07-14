@@ -1,44 +1,48 @@
+import { Button, TextField } from "@mui/material";
 import "./Checkout.css";
 
-const Checkout = ({ handleSubmit, handleChange }) => {
+
+const Checkout = ({ handleSubmit, handleChange, errors }) => {
   return (
     <div className="login">
       <div className="form-container">
         <h1 className="tittle">Mi pedido</h1>
-        <form className="form" onSubmit={handleSubmit}>
-          <div>
-            <label className="label">Nombre</label>
-            <input
-              type="text"
-              name="nombre"
-              placeholder="Sweet Home"
-              className="input input-name"
-              onChange={handleChange}
-            />
 
-            <label className="label">Email</label>
-            <input
-              type="text"
-              name="email"
-              placeholder="sweet@home.com"
-              className="input input-email"
-              onChange={handleChange}
-            />
-
-            <label className="label">Teléfono</label>
-            <input
-              type="text"
-              name="telefono"
-              placeholder="+54 9 4897213"
-              className="input input-passw"
-              onChange={handleChange}
-            />
-          </div>
-
-          <button type="submit" className="primary-button create-button">
-            Confirmar Pedido
-          </button>
-        </form>
+        <form onSubmit={handleSubmit} className="form">
+        <div>
+        <TextField
+          label="Nombre"
+          className="input input-name"
+          variant="outlined"
+          name="nombre"
+          onChange={handleChange}
+          helperText={errors.nombre}
+          error={errors.nombre ? true : false}
+        />
+        <TextField
+          label="Email"
+          className="input input-email"
+          variant="outlined"
+          name="email"
+          onChange={handleChange}
+          helperText={errors.email}
+          error={errors.email ? true : false}
+        />
+        <TextField
+          label="Teléfono"
+          className="input input-passw"
+          variant="outlined"
+          name="telefono"
+          onChange={handleChange}
+          helperText={errors.telefono}
+          error={errors.telefono ? true : false}
+        />
+        </div>
+        <Button variant="outlined" type="submit" className="primary-button create-button">
+          Comprar
+        </Button>
+      </form>
+       
       </div>
     </div>
   );
