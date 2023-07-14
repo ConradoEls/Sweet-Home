@@ -38,7 +38,7 @@ const Checkout = ({ handleSubmit, handleChange, errors }) => {
             color="inherit"
             variant="outlined"
             type="submit"
-            className="primary-button"
+            className="finish"
           >
             Comprar
           </Button>

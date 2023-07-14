@@ -1,0 +1,22 @@
+.cart-empty{
+    display: grid;
+    place-content: center;
+    place-items: center;
+    margin-top: 28px;
+}
+.cart-empty h2{
+    text-align: center;
+}
+
+.shop-button{
+    border-radius: 8px;
+    background-color: var(--sweet-home);
+    border: none;
+    color: var(--white);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--lg);
+    font-weight: bold;
+    height: 50px;
+    font-family: 'Quicksand', sans-serif;
+}

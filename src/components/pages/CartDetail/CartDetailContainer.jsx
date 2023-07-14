@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { CartContext } from "../../../context/CartContext";
 import CartDetail from "./CartDetail";
 import Swal from "sweetalert2";
+import CartEmpty from "./CartEmpty";
 
 const CartDetailContainer = () => {
   const { cart, getTotalPrice, clearCart, removeById } =
@@ -41,7 +42,7 @@ const CartDetailContainer = () => {
           removeById={removeById}
         />
       ) : (
-        <h1>FALTA EDITAR ESTO!</h1>
+        <CartEmpty />
       )}
     </div>
   );

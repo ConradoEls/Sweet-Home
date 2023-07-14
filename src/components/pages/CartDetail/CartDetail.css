@@ -114,7 +114,8 @@
     cursor: pointer;
     font-size: var(--lg);
     font-weight: bold;
-    height: 50px; 
+    height: 50px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .swal2-styled.swal2-confirm {

@@ -28,11 +28,12 @@
 }
 
 
-.primary-button{
+.finish{
     background-color: var(--sweet-home) !important;
     border: none !important;
     color: white !important;
     font-family: 'Quicksand', sans-serif !important;
     width: 100% !important;
     font-size: var(--lg) !important;
+    font-weight: bold !important;
 }
