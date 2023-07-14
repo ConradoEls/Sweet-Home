@@ -12,8 +12,13 @@ const CartDetailContainer = () => {
         Swal.fire({
           title: "Deseas vaciar el carrito?",
           showDenyButton: false,
+          customClass: {
+            confirmButton: 'swalBtnColor'
+          },
           showCancelButton: true,
+          focusCancel: true,
           confirmButtonText: "Vaciar",
+          confirmButtonColor: '#FFCAAF',
           denyButtonText: `Cancelar`,
         }).then((result) => {
           /* Read more about isConfirmed, isDenied below */

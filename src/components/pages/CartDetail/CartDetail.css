@@ -112,3 +112,8 @@
     font-weight: bold;
     height: 50px; 
 }
+
+.swal2-styled.swal2-confirm {
+    background-color: var(--sweet-home);
+}
+
