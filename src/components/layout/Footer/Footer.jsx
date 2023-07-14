@@ -7,6 +7,7 @@ const Footer = () => {
         src="https://res.cloudinary.com/dtvlycezq/image/upload/v1684851983/Sweet%20Home/white_logo_color_background_tcersk.jpg"
         alt="logo"
       />
+      <p>Developed by Conrado Els</p>
     </div>
   );
 };
