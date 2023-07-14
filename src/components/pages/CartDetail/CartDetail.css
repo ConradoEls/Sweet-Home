@@ -14,9 +14,12 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 14px;
+    text-align: center;
 }
 .title-div{
     display: flex;
+    align-items: center;
+    
 }
 .tittle-container img{
     cursor: pointer;
@@ -27,6 +30,7 @@
 .tittle{
     font-size: var(--lg);
     font-weight: bold;
+    margin: 0 !important;
 }
 
 .cleaner{
