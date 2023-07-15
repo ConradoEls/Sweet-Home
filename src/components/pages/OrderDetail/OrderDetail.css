@@ -108,4 +108,8 @@
     font-weight: bold;
     height: 50px;
     font-family: 'Quicksand', sans-serif;
+    transition: all 0.4s;
 }
+.back-home:hover {
+    transform: scale(1.05);
+  }

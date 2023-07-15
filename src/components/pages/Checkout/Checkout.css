@@ -36,4 +36,8 @@
     width: 100% !important;
     font-size: var(--lg) !important;
     font-weight: bold !important;
+    transition: all 0.4s !important;
 }
+.finish:hover {
+    transform: scale(1.05) !important;
+  }

@@ -14,7 +14,7 @@ const ItemListContainer = () => {
         <BounceLoader
           color="#FFCAAF"
           cssOverride={{
-            left: "48%",
+            left: "47.7%",
             position: "fixed",
             top: "40%",
           }}

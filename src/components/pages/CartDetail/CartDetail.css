@@ -25,7 +25,12 @@
     cursor: pointer;
     transform: rotate(180deg);
     margin-right: 14px;
+    transition: all 0.4s;
 }
+.tittle-container img:hover {
+    transform: rotate(180deg) scale(2.07);
+  }
+
 
 .tittle{
     font-size: var(--lg);
@@ -38,8 +43,11 @@
     font-size: var(--md);
     cursor: pointer;
     margin-left: 34px;
+    transition: all 0.4s;
 }
-
+.cleaner:hover {
+    transform: scale(1.10);
+  }
 
 .shopping-cart{
     display: grid;
@@ -67,7 +75,12 @@
 
 .shopping-cart img:nth-child(5){
     cursor: pointer;
+    transition: all 0.4s;
 }
+
+.shopping-cart img:nth-child(5):hover {
+    transform: scale(1.5);
+  }
 
 .product-img{
     width: 70px;
@@ -116,7 +129,12 @@
     font-weight: bold;
     height: 50px;
     font-family: 'Quicksand', sans-serif;
+    transition: all 0.4s;
 }
+
+.checkout-button:hover {
+    transform: scale(1.07);
+  }
 
 .swal2-styled.swal2-confirm {
     background-color: var(--sweet-home);
