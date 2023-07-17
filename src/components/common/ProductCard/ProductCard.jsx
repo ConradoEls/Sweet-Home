@@ -4,6 +4,7 @@ import "./ProductCard.css";
 
 const ProductCard = ({ element }) => {
   return (
+    <Link to={`/productDetail/${element.id}`}>
     <div className="product-card">
       <img src={element.img} alt="product" className="product-img" />
       <div className="product-infor">
@@ -18,6 +19,7 @@ const ProductCard = ({ element }) => {
         </Link>
       </div>
     </div>
+    </Link>
   );
 };
 
