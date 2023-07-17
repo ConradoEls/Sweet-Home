@@ -106,7 +106,8 @@
   height: 30px;
   font-family: "Quicksand", sans-serif;
   transition: all 0.4s;
-  align-items: center;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 .secondary-button:hover {
   transform: scale(1.07);
