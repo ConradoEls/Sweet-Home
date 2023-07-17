@@ -31,7 +31,7 @@ const NavBar = () => {
         <IconButton
           onClick={toggleDrawer("left", true)}
           edge="start"
-          color="inherit"
+          color="#FFCAAF"
           aria-label="menu"
           sx={{ mr: 2 }}
           className="burguer"
