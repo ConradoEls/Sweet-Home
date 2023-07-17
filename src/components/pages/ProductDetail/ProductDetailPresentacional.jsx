@@ -27,7 +27,7 @@ const ProductDetailPresentacional = ({ productSelected, onAdd, cant }) => {
             onAdd={onAdd}
           />
         ) : (
-          <h3 style={{ textAlign: "center" }}>Lo siento... No hay stock!</h3>
+          <h3 style={{ textAlign: "center", marginBottom:"220px" }}>Lo siento... No hay stock!</h3>
         )}
       </div>
     </div>
