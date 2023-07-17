@@ -1,5 +1,4 @@
 .cart-detail{
-    box-sizing: border-box;
     display: grid;
     place-items: center;
     margin: 30px 100px 280px;
@@ -142,6 +141,16 @@
 
 @media (max-width: 825px){
 
+    .cart-detail div{
+        width: auto;
+    }
 
-    
+    .cart-detail{
+        margin: 30px 30px 220px;
+    }
+    .button-div{
+        width: 100%;
+    }
+
+
 }
