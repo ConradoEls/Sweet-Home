@@ -4,14 +4,14 @@
 
 Developed by Conrado Els
 
-# Descripción:
+## Descripción:
 - Este proyecto es un e-commerce desarrollado en React.js, diseñado para la venta de panaderia y postres. El objetivo principal es proporcionar a los usuarios una plataforma intuitiva, atractiva y minimalista para sentir el confort y calidad que la marca transmite en sus productos.
 
-###Proyecto (Vercel)
+### Proyecto (Vercel)
 
 --> `<link>`(https://sweet-home-ten.vercel.app/) <--
 
-####Situación actual:
+#### Situación actual:
 Al momento de publicar, cuenta con las siguientes funcionalidades implementadas:
 
 - Menú de navegación que permite filtrar los productos por categoría.
@@ -25,7 +25,7 @@ Al momento de publicar, cuenta con las siguientes funcionalidades implementadas:
 - Vista de pago (checkout), que se muestra una vez que los usuarios finalizan su compra en el carrito. En esta vista, se les solicita completar un formulario con los datos mínimos de contacto. Estos datos, junto con la información de los destinos elegidos, se almacenan en una base de datos no relacional Firestore de Firebase.
 
 
-# Instalación
+## Instalación
 Para ejecutar el proyecto, sigue los pasos a continuación:
 
 - Primero, asegúrate de tener npm instalado en tu máquina.
@@ -61,4 +61,4 @@ El proyecto se ha desarrollado utilizando las siguientes tecnologías y herramie
 
 - Cloudinary: Una plataforma en la nube que proporciona servicios de gestión de imágenes y videos.
 
-##Developed by Conrado Els
+## Developed by Conrado Els
