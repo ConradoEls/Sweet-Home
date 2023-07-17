@@ -8,6 +8,20 @@
     text-align: center;
 }
 
+.back-shop{
+    background-color: var(--sweet-home);
+  border-radius: 8px;
+  border: none;
+  color: var(--white);
+  width: 80%;
+  cursor: pointer;
+  font-size: var(--md);
+  font-weight: bold;
+  height: 50px;
+  font-family: "Quicksand", sans-serif;
+  transition: all 0.4s;
+}
+
 .shop-button{
     border-radius: 8px;
     background-color: var(--sweet-home);
@@ -19,4 +33,18 @@
     font-weight: bold;
     height: 50px;
     font-family: 'Quicksand', sans-serif;
+}
+
+
+
+@media (max-width: 825px){
+    .back-shop{
+        width: 50% !important;
+    }
+    
+    .info-sweet{
+        width: 80%;
+    }
+
+    
 }
