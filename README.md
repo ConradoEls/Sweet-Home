@@ -4,7 +4,7 @@
 
 Developed by Conrado Els
 
-##Descripción:
+# Descripción:
 - Este proyecto es un e-commerce desarrollado en React.js, diseñado para la venta de panaderia y postres. El objetivo principal es proporcionar a los usuarios una plataforma intuitiva, atractiva y minimalista para sentir el confort y calidad que la marca transmite en sus productos.
 
 ###Proyecto (Vercel)
@@ -25,7 +25,7 @@ Al momento de publicar, cuenta con las siguientes funcionalidades implementadas:
 - Vista de pago (checkout), que se muestra una vez que los usuarios finalizan su compra en el carrito. En esta vista, se les solicita completar un formulario con los datos mínimos de contacto. Estos datos, junto con la información de los destinos elegidos, se almacenan en una base de datos no relacional Firestore de Firebase.
 
 
-###Instalación
+# Instalación
 Para ejecutar el proyecto, sigue los pasos a continuación:
 
 - Primero, asegúrate de tener npm instalado en tu máquina.
@@ -38,11 +38,11 @@ Para ejecutar el proyecto, sigue los pasos a continuación:
 
 - Una vez que se hayan instalado las dependencias, ejecuta el siguiente comando para iniciar el servidor local:
 
-`$npm run dev`
+`$ npm run dev`
 
 - En la consola, se mostrará un enlace local, generalmente http://localhost:3000. Haz clic en el enlace mientras mantienes presionada la tecla "CTRL" para abrirlo en tu navegador predeterminado.
 
-###Tecnologías utilizadas
+### Tecnologías utilizadas
 El proyecto se ha desarrollado utilizando las siguientes tecnologías y herramientas:
 
 - React JS: Un framework de JavaScript utilizado para construir la interfaz de usuario del proyecto.
